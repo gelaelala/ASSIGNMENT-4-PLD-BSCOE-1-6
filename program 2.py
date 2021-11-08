@@ -6,13 +6,15 @@ def getApplesOranges():
 
 def totalApplesOranges(apples_, oranges_):
     total_apples = int(apples*20)
-    total_oranges = int(apples*25)
-    return (total_apples, total_oranges)
-
-def totalamount(Apples_, Oranges_):
-    total_amount = int(Apples_ + Oranges_)
+    total_oranges = int(oranges*25)
+    total_amount = int(total_apples + total_oranges)
     return (total_amount)
 
+def display(total_):
+    print(f'The total amount is {total_}.')
 
 apples, oranges = getApplesOranges()
-Total_ApplesOranges = totalApplesOranges(apples, oranges)
+
+Total = totalApplesOranges(apples, oranges)
+
+display(Total)
