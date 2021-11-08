@@ -9,8 +9,8 @@ def totalandchange(numberofapples_, money_, priceofapple_):
     change = int(money_ - total)
     return change
 
-def display(Numberofapples, total):
-    print (f'You can buy {Numberofapples} apples and your change is {total} pesos.')
+def display(Numberofapples, change_):
+    print (f'You can buy {Numberofapples} apples and your change is {change_} pesos.')
 
 money, priceofapple, numberofapples = getMoneyPriceofapple()
 
